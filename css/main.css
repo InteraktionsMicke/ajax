@@ -1,0 +1,193 @@
+    body {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 100;
+        background-image: url(stockholm.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        text-align: center;
+        padding: 40px;
+        padding-top: 30px;
+        background: #363231;
+        color: white;
+        letter-spacing: .05rem;
+    }
+    
+    .logo {
+        font-family: 'Leckerli One', cursive;
+        color: #d4894c;
+        font-size: 6.3em;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        letter-spacing: 5px;
+        text-shadow: 1px 1px 3px #252221;
+        font-weight: 100;
+        letter-spacing: .05rem;
+    }
+    
+    button {
+        border-radius: 20px;
+        border: none;
+        padding: 10px 20px;
+        background: #d4894c;
+        color: white;
+        margin-top: 0px;
+        margin: 5px;
+        box-shadow: 1px 1px 1px #363231;
+        cursor: pointer;
+        letter-spacing: .05rem;
+    }
+    
+    button:hover {
+        background-color: white;
+        color: black;
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    div {
+        padding: 20px;
+        color: #d4894c;
+    }
+    
+    #listJobs {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    
+    .jobWrapper {
+        border-radius: 5px;
+        background-color: #413d3b;
+        color: white;
+        margin: 20px;
+        box-shadow: 0px 0px 3px #252221;
+    }
+    
+    .annonsrubrik {
+        margin-top: 0px;
+        font-weight: 300;
+    }
+    
+    .arbetsplatsnamn {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-weight: 700;
+        font-size: 1.2em;
+        color: #d4894c;
+    }
+    
+    .ansokningsdag {
+        margin-top: 20px;
+        font-weight: 100;
+        font-size: 0.8em;
+        margin-bottom: 5px;
+    }
+    
+    .publiceringsdatum {
+        font-size: 0.8em;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+    
+    .paginationWrapper {
+        text-align: center;
+        opacity: 0.9;
+        margin: 0px;
+    }
+    
+    #paginationList {
+        padding: 0px;
+        border: 1px solid white;
+        border-radius: 4px;
+        display: inline-block;
+    }
+    
+    #paginationList li {
+        display: inline;
+        box-sizing: border-box;
+        padding-right: 6px;
+        padding-left: 6px;
+        border-right: 1px solid white;
+        margin-right: -1px;
+        color: white;
+    }
+    
+    #paginationList li:hover {
+        background: white;
+        color: black;
+        cursor: pointer;
+    }
+    
+    .modal {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Black w/ opacity */
+    }
+    /* Modal Content/Box */
+    
+    #modal-content {
+        background-color: #363231;
+        margin: 10% auto;
+        /* 15% from the top and centered */
+        width: 80%;
+        border-radius: 4px;
+        /* Could be more or less, depending on screen size */
+        box-shadow: 0px 0px 6px #252221;
+    }
+    
+    #modal-padding {
+        padding: 20px 60px;
+    }
+    
+    #modal-padding>.arbetsplatsnamn {
+        font-size: 1.5em;
+        margin: 0;
+    }
+    
+    #modal-padding>.annonsrubrik {
+        margin: 5px 0 60px 0;
+        font-weight: 400;
+        color: #fff;
+    }
+    
+    #modal-padding>.annonstext {
+        font-family: 'Roboto Slab', serif;
+        font-size: .8rem;
+        font-weight: 100;
+        color: #fff;
+        line-height: 1rem;
+        margin-bottom: 60px;
+    }
+    
+    @media screen and (min-width: 968px) {
+        #listJobs {
+            grid-template-columns: 50% 50%;
+        }
+        body {
+            padding: 100px;
+            padding-top: 30px;
+        }
+        #modal-content {
+            width: 80%;
+        }
+    }
